@@ -1,15 +1,69 @@
 <!-- this is the blog page -->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Blog-page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .header {
+            margin-bottom: 2rem;
+        }
+        .nav {
+            margin-bottom: 1rem;
+        }
+        .post-list {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
 
 <body>
-    <h1>My Blog</h1>
-    <p>Welcome to my blog. Here you will find all my blog posts.</p>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
-    <h2>Blog Posts</h2>
-    <ul>
-        <li>
-            <h1>still coming...<h1/>
-        </li>
-    </ul>
+    <div class="container">
+        <header class="header">
+            <h1>My Blog</h1>
+            <p>Welcome to my blog. Here you will find all my blog posts.</p>
+        </header>
+        <nav class="nav">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+        </nav>
+        <main>
+            <h2>Blog Posts</h2>
+            <ul class="post-list">
+                <Fragment>
+                    <li>
+                        <a href="/posts/post-1">post 1</a>
+                        <a href="/posts/post-2">post 2</a>
+                        <a href="/posts/post-3">post 3</a>
+                    </li>
+                </Fragment>
+            </ul>
+        </main>
+    </div>
 </body>
+</html>
