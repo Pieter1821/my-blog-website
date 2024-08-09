@@ -1,4 +1,14 @@
-<!-- This is my first post -->
+---
+title: 'My First Blog Post'
+pubDate: 2024-08-05
+description: 'Join me on my journey as I dive into Astro and share my experiences.'
+author: 'Pieter Deane'
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+tags: ["astro", "blogging", "learning in public"]
+layout: ../../layouts/MarkdownPostLayout.astro
+---
 
 # My First Blog Post
 
@@ -19,20 +29,3 @@ Welcome to my new blog about learning Astro! Here, I will share my journey as I 
 I plan to complete the Astro tutorial and continue adding more posts. Stay tuned for more updates as I explore the capabilities of Astro and share my findings.
 
 Thank you for joining me on this journey. If you have any questions or suggestions, feel free to leave a comment below. Watch this space for more to come!
-
----
-
-**Title:** My First Blog Post
-
-**Published Date:** 2024-08-05
-
-**Description:** Join me on my journey as I dive into Astro and share my experiences.
-
-**Author:** Pieter Deane
-
-**Image:**
-
-![The Astro logo on a dark background with a pink glow.](https://docs.astro.build/assets/rose.webp)
-
-**Tags:** astro, blogging, learning in public
-
