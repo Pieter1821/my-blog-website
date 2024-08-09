@@ -1,6 +1,7 @@
 ---
 import Navigation from "../components/navigation.astro";
 const allPosts = await Astro.glob("./posts/*.md");
+import BlogPost from "../components/BlogPost.astro";
 import "../styles/globals.css";
 ---
 
@@ -24,7 +25,9 @@ import "../styles/globals.css";
         {
           allPosts.map((post) => (
             <li>
-              <a href={post.url}>{post.frontmatter.title}</a>
+              {allPosts.map((post) => (
+                <BlogPost url={post.url} title={post.frontmatter.title} />
+              ))}
             </li>
           ))
         }
